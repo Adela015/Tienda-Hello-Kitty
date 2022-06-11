@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*---------------NAVBAR------------*/
+
+.navbar{
+    padding: 18px;
+    list-style-type: none;
+    text-align: end;
+    font-size: 20px;
+}
+
+.navbar li{
+    display: inline;
+
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+
+header{
+    background: rgba(251, 15, 125, 0.842);
+}
+
+#navbar__titulo{
+    display: flex;
+    font-size: 1rem;
+}
+
+video{
+    position: relative;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+/*----------GRID CATEGORIAS MÁS VENDIDAS---------*/
+
+.titulo__categorias{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.contenedor__img{
+    display: flex;
+}
+
+.contenedor__img .contenedor__columna img{
+    width: 90%;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+.contenedor__img .contenedor__columna2 img{
+    width: 70%;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+.contenedor__img .contenedor__columna{
+    background-color: rgba(0, 255, 255, 0.386);
+    padding: 15px;
+}
+
+.contenedor__img .contenedor__columna2{
+    background-color: rgba(255, 0, 119, 0.337);
+    padding: 15px;
+}
+
+/*--------------CARROUSEL DE CARDS--------------*/
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards .cards__columna{
+    display: flex;
+    width: 14rem;
+    height: 18rem;
+    background-color: rgba(0, 255, 255, 0.386);
+}
+
+.cards .cards__columna2{
+    display: flex;
+    width: 14rem;
+    height: 18rem;
+    background-color: rgba(255, 0, 119, 0.337);
+}
+
+.cards .cards__columna img{
+    width: 80%;
+    height: 60%;
+    display: flex;
+    align-content: center;
+}
+
+.cards .cards__columna2 img{
+    width: 80%;
+    height: 60%;
+    display: flex;
+    align-content: center;
+}
+
+/*-----------------BOTÓN VER MÁS----------------*/
+
+div .boton__verMas{
+    font-size: 23px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+}
+
+/*----------------FOOTER-------------*/
+
+footer{
+    position: relative;
+    height: 250px;
+    background: rgb(0, 232, 253);
+}
