@@ -8,6 +8,15 @@
 
 /*---------------NAVBAR------------*/
 
+a.nav-link{
+    color: white;
+}
+
+a.navbar-brand{
+    color: white;
+}
+
+
 .bg-pink{
     background: rgba(251, 15, 125, 0.842);
 }
@@ -57,73 +66,56 @@ a
     padding: 15px;
 }
 
+.coloraqua__titulo--grid{
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    padding: 10px;
+    margin: 1px;
+    background: rgba(0, 255, 255, 0.775);
+    position: relative;
+    bottom: 90px;
+}
+
+.colorrosa__titulo--grid{
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    padding: 10px;
+    margin: 1px;
+    background: rgba(255, 0, 119, 0.337);
+    position: relative;
+    bottom: 90px;
+}
+
+/*---------------IMAGEN GIFT TREN--------------*/
+
+.tren{
+    /* margin: 15px auto 15px;
+    display: block;
+    position: relative; */
+    position: relative;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+}
+
 /*--------------CARROUSEL DE CARDS--------------*/
 
-.cards{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: center;
-    margin-bottom: 5%;
+div.card{
+    box-shadow: 5px 5px 5px rgba(194, 111, 169, 0.432);
 }
 
-.cards__columna{
-    width: 15.5rem;
-    height: 21.5rem;
-    background-color: rgba(0, 255, 255, 0.386);
-
-}
-
-.cards__columna2{
-    width: 15.5rem;
-    height: 21.5rem;
-    background-color: rgba(255, 0, 119, 0.337);
-}
-
-.cards__columna img{
-    width: 80%;
-    height: 60%;
-    position: relative;
-    margin-left: 10%;
-    margin-top: 5%;
-}
-
-.cards__columna2 img{
-    width: 80%;
-    height: 60%;
-    position: relative;
-    margin-left: 10%;
-    margin-top: 5%;
-}
-
-.cards__precio{
-    font-size: 1.5rem;
-    position: relative;
-    margin-left: 9%;
-    margin-top: 1.5%;
-}
-
-.cards__articulo{
-    font-size: 1.2rem;
-    position: relative;
-    margin-left: 9%;
-    margin-top: 2%;
-}
-
-.contenedor__boton--compar{
-    text-align: center;
-}
-
-.cards__boton--comprar{
-    font-size: 1.1rem;
-    margin-top: 2%;
-    background-color: rgba(251, 15, 125, 0.842);
+a.color-pink{
+    background: rgba(251, 15, 125, 0.842);
     color: white;
-    border: none;
-    margin: 4%;
-    padding: 4%;
-    cursor: pointer;
+    border-style: none;
+}
+
+a.color-pink:hover{
+    background: aqua;
+    border-style: none;
 }
 
 /*-----------------BOTÓN VER MÁS----------------*/
@@ -153,7 +145,7 @@ a .boton__verMas{
     text-align: center;
 }
 .grid{
-    background-color: aqua;
+    background-color: white;
 }
 .grid__contenedor{
     width: 100%;
@@ -299,6 +291,11 @@ footer{
     .contact-info ul,
     .contact-info p {
         text-align: left;
+    }
+    .tren{
+        width: 50%;
+        position: relative;
+        display: block;
     }
     /*--BLOG CARDS--*/
 
