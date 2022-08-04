@@ -55,7 +55,7 @@ video {
   font-size: 25px;
   padding: 10px;
   margin: 1px;
-  background: aqua;
+  background: rgba(0, 255, 255, 0.386);
   position: relative;
   bottom: 90px; }
 
@@ -174,21 +174,6 @@ ul {
     margin: 0 0 1rem 0; }
 
 /*------------BLOG CARD----------*/
-/*----------------FOOTER-------------*/
-footer {
-  position: relative;
-  height: 250px;
-  background: aqua;
-  margin-top: 5%; }
-  footer .footer__texto {
-    color: white;
-    text-align: center;
-    font-size: 1.3rem;
-    position: relative;
-    margin-top: 1rem;
-    top: 10%;
-    cursor: pointer; }
-
 /*----------------MEDIA QUERIES-----------*/
 @media (min-width: 480px) {
   /*--GRID-FOTOS--*/

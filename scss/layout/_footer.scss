@@ -1,0 +1,34 @@
+footer{
+    background: $color-aqua;
+    &__parrafo{
+        text-align: center;
+        font-size: $tamano-secundario;
+        color: $color-white;
+        .fa-boombox{
+            color: red;
+        }
+        .fa-croissant{
+            color: green;
+        }
+        .fa-gamepad-modern{
+            color: blue;
+        }
+        .fa-user-robot{
+            color: yellow;
+        }
+    }
+}
+
+/*--MAP--*/
+$iconos-footer: (
+    boombox: red,
+    croissant: green,
+    gamepad-modern: blue,
+    user-robot: yellow,
+);
+/*--EACH--*/
+@each $name, $color in $iconos-footer {
+    .fa-#{$name}{
+        background-color: #{$color};
+    }
+}

@@ -1,0 +1,13 @@
+div.card{
+    box-shadow: 5px 5px 5px $sombras;
+}
+
+a.color-pink{
+    background: $color-rosa;
+    color: $color-blanco;
+    border-style: none;
+    &:hover{
+        background: $color-aqua;
+        border-style: none;
+    }
+}

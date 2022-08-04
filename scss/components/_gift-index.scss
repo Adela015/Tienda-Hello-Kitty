@@ -1,0 +1,9 @@
+/*------GIFT DE TREN EN EL INDEX-----*/
+
+.tren{
+    position: relative;
+    right: 0;
+    bottom: 0;
+    width: $width-principal;
+    z-index: -1;
+}

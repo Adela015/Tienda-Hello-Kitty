@@ -1,0 +1,33 @@
+@media(min-width:480px){
+    /*--GRID-FOTOS--*/
+    .grid .grid__contenedor{
+        grid-template-columns: repeat(2,50%);
+    }
+
+}
+
+@media(min-width:760px){
+    /*--GRID-FOTOS--*/
+    .grid .grid__contenedor{
+        grid-template-columns: repeat(4,25%);
+    }
+
+    /*--FORMULARIO--*/
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        & > * {
+            padding: 2em;
+        }
+    }
+    .contact-info h4,ul,p {
+        text-align: left;
+    }
+    .tren{
+        width: 50%;
+        position: relative;
+        display: block;
+    }
+    /*--BLOG CARDS--*/
+
+}

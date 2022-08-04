@@ -1,0 +1,52 @@
+.titulo__categorias{
+    font-size: $tamano-principal;
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.contenedor__img{
+    display: flex;
+    &__columna2{
+        background-color: $color-rosa-transparente;
+        padding: 15px;
+        img{
+            width: 70%;
+            align-items: center;
+            padding: 5px;
+            margin: 5px;
+        }
+    }
+    &__columna{
+        background-color: $color-aqua-transparente;
+        padding: 15px;
+        img{
+            width: 90%;
+            align-items: center;
+            padding: 5px;
+            margin: 5px;
+        }
+    }
+}
+
+.coloraqua__titulo--grid{
+    text-align: center;
+    color: $color-negro;
+    font-size: $tamano-secundario;
+    padding: 10px;
+    margin: 1px;
+    background: $color-aqua-transparente;
+    position: relative;
+    bottom: 90px;
+}
+
+.colorrosa__titulo--grid{
+    text-align: center;
+    color: $color-negro;
+    font-size: $tamano-secundario;
+    padding: 10px;
+    margin: 1px;
+    background: $color-rosa-transparente;
+    position: relative;
+    bottom: 90px;
+}
