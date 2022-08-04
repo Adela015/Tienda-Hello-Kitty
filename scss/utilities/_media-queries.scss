@@ -1,9 +1,10 @@
+/*----------------MEDIA QUERIES-----------*/
+
 @media(min-width:480px){
     /*--GRID-FOTOS--*/
     .grid .grid__contenedor{
         grid-template-columns: repeat(2,50%);
     }
-
 }
 
 @media(min-width:760px){
