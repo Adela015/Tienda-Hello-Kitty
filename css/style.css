@@ -87,7 +87,7 @@ a.navbar-brand {
   font-size: 25px;
   padding: 10px;
   margin: 1px;
-  background: aqua;
+  background: rgba(0, 255, 255, 0.386);
   position: relative;
   bottom: 90px; }
 
@@ -200,11 +200,12 @@ footer {
   height: 250px;
   background: aqua;
   margin-top: 5%; }
-  footer .footer__texto {
-    color: white;
-    text-align: center;
-    font-size: 1.3rem;
-    position: relative;
-    margin-top: 1rem;
-    top: 10%;
-    cursor: pointer; }
+
+.footer__texto {
+  color: white;
+  text-align: center;
+  font-size: 1.3rem;
+  position: relative;
+  margin-top: 1rem;
+  top: 10%;
+  cursor: pointer; }

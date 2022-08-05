@@ -28,7 +28,6 @@ a.navbar-brand{
     color: $color-blanco;
 }
 
-
 .bg-pink{
     background: $color-rosa;
 }
@@ -72,7 +71,7 @@ a.navbar-brand{
     font-size: 25px;
     padding: 10px;
     margin: 1px;
-    background: $color-aqua;
+    background: $color-aqua-transparente;
     position: relative;
     bottom: 90px;
 }
@@ -93,7 +92,7 @@ a.navbar-brand{
 /*--------------CARROUSEL DE CARDS--------------*/
 
 div.card{
-    box-shadow: 5px 5px 5px $sombras;
+    box-shadow: 5px 5px 5px map-get($sombras, 800);
 }
 
 a.color-pink{
@@ -217,16 +216,22 @@ footer{
     height: 250px;
     background: $color-aqua;
     margin-top: 5%;
-    .footer__texto{
-        color: $color-blanco;
-        text-align: center;
-        font-size: 1.3rem;
-        position: relative;
-        margin-top: 1rem;
-        top: 10%;
-        cursor: pointer;
-    }
 }
 
+//MIXIN
+@mixin footer($porcentaje, $alineado, $color) {
+    color: $color;
+    text-align: $alineado;
+    font-size: 1.3rem;
+    position: relative;
+    margin-top: 1rem;
+    top: $porcentaje;
+    cursor: pointer;
+} 
 
-
+.footer__texto{
+    @include footer(10%, center, #e2e2e2)
+}
+.footer__texto{
+    @include footer(10%, center, #070707)
+}
