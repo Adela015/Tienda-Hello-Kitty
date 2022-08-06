@@ -1,0 +1,17 @@
+/*-----------------BOTÓN VER MÁS----------------*/
+
+.contenedor__boton--vermas{
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+a .boton__verMas{
+    font-size: 23px;
+    border: none;
+    cursor: pointer;
+    background-color: $color-rosa;
+    color: $color-blanco;
+    padding: 1rem;
+    margin: 1rem;
+}

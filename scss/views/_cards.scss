@@ -1,0 +1,12 @@
+/*--------------CARROUSEL DE CARDS--------------*/
+
+
+a.color-pink{
+    background: $color-rosa;
+    color: $color-blanco;
+    border-style: none;
+    &:hover{
+        background: $color-aqua;
+        border-style: none;
+    }
+}
