@@ -10,3 +10,9 @@ a.color-pink{
         border-style: none;
     }
 }
+
+//MAP-GET
+div.card{
+    //box-shadow: 5px 5px 5px grey;
+    box-shadow: 5px 5px 5px map-get($sombras, 800);
+}

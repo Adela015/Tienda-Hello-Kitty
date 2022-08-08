@@ -7,3 +7,21 @@ footer{
     margin-top: 5%;
 }
 
+//MIXIN
+@mixin footer($porcentaje, $alineado, $color) {
+    color: $color;
+    text-align: $alineado;
+    font-size: 1.3rem;
+    position: relative;
+    margin-top: 1rem;
+    top: $porcentaje;
+    cursor: pointer;
+} 
+
+.footer__texto{
+    @include footer(10%, center, #e2e2e2)
+}
+.footer__texto{
+    @include footer(10%, center, #070707)
+}
+
