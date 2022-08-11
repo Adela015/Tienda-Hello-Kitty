@@ -1,5 +1,20 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
+/*$sombras: map-merge(
+    (
+    "100": #EEF1F4,
+    "200": #DFE3E7,
+    "300": #CBCFD2,
+    "400": #B3B6B9,
+    "500": #9CA0A3,
+    "600": #7C7F82,
+    "700": #606365,
+    "800": #4A4C4F,
+    "900": #333536,
+    ),
+    $sombras
+);
+*/
 * {
   padding: 0;
   margin: 0;
@@ -31,11 +46,27 @@ a .boton__verMas {
 
 /*----------------FOOTER-------------*/
 footer {
-  position: relative;
-  height: 250px;
-  background: aqua;
+  background-color: aqua;
+  display: grid;
+  place-items: center;
   margin-top: 5%; }
 
+/*@mixin footer($porcentaje, $alineado, $color) {
+    color: $color;
+    text-align: $alineado;
+    font-size: 1.3rem;
+    position: relative;
+    margin-top: 1rem;
+    top: $porcentaje;
+    cursor: pointer;
+} 
+
+.footer__texto{
+    @include footer(10%, center, #e2e2e2)
+}
+.footer__texto{
+    @include footer(10%, center, #070707)
+}*/
 /*---------------NAVBAR------------*/
 a.nav-link {
   color: white; }
@@ -78,6 +109,9 @@ a.color-pink {
   a.color-pink:hover {
     background: aqua;
     border-style: none; }
+
+div.card {
+  box-shadow: 5px 5px 5px grey; }
 
 .container {
   max-width: 1170px;
@@ -195,39 +229,3 @@ video {
   bottom: 0;
   width: 100%;
   z-index: -1; }
-
-/*$sombras: map-merge(
-    (
-    "100": #EEF1F4,
-    "200": #DFE3E7,
-    "300": #CBCFD2,
-    "400": #B3B6B9,
-    "500": #9CA0A3,
-    "600": #7C7F82,
-    "700": #606365,
-    "800": #4A4C4F,
-    "900": #333536,
-    ),
-    $sombras
-);
-*/
-div.card {
-  box-shadow: 5px 5px 5px grey;
-  /*box-shadow: 5px 5px 5px map-get($sombras, 800);*/ }
-
-/*@mixin footer($porcentaje, $alineado, $color) {
-    color: $color;
-    text-align: $alineado;
-    font-size: 1.3rem;
-    position: relative;
-    margin-top: 1rem;
-    top: $porcentaje;
-    cursor: pointer;
-} 
-
-.footer__texto{
-    @include footer(10%, center, #e2e2e2)
-}
-.footer__texto{
-    @include footer(10%, center, #070707)
-}*/

@@ -1,10 +1,9 @@
 /*----------------FOOTER-------------*/
 
-footer{
-    position: relative;
-    height: 250px;
-    background: $color-aqua;
-    margin-top: 5%;
+.footer__container{
+    background-color: aqua;
+    display: grid;
+    place-items: center;
 }
 
 //MIXIN
