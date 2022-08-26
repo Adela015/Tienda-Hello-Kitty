@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
 /*$sombras: map-merge(
     (
     "100": #EEF1F4,
@@ -36,6 +37,7 @@ a .boton__verMas {
   padding: 1rem;
   margin: 1rem; }
 
+/*------------BOTÓN COMPRAR-----------*/
 /*---------------IMAGEN GIFT TREN--------------*/
 .tren {
   position: relative;
@@ -45,12 +47,6 @@ a .boton__verMas {
   z-index: -1; }
 
 /*----------------FOOTER-------------*/
-footer {
-  background-color: aqua;
-  display: grid;
-  place-items: center;
-  margin-top: 5%; }
-
 /*@mixin footer($porcentaje, $alineado, $color) {
     color: $color;
     text-align: $alineado;
@@ -66,16 +62,23 @@ footer {
 }
 .footer__texto{
     @include footer(10%, center, #070707)
-}*/
+}
+*/
+.contenedor__footer {
+  background: #00bfff;
+  height: 150px; }
+
+.contenedor__footer--mensaje {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+  position: relative;
+  bottom: -75%; }
+
 /*---------------NAVBAR------------*/
-a.nav-link {
-  color: white; }
-
-a.navbar-brand {
-  color: white; }
-
 .bg-pink {
-  background: rgba(251, 15, 125, 0.842); }
+  background-color: rgba(251, 15, 125, 0.842) !important; }
 
 /*----------------MEDIA QUERIES-----------*/
 @media (min-width: 480px) {
@@ -88,18 +91,36 @@ a.navbar-brand {
   .grid .grid__contenedor {
     grid-template-columns: repeat(4, 25%); }
   /*--FORMULARIO--*/
-  .contact-wrapper {
-    display: grid;
-    grid-template-columns: 2fr 1fr; }
-    .contact-wrapper > * {
-      padding: 2em; }
-  .contact-info h4, ul, p {
-    text-align: left; }
   .tren {
     width: 50%;
     position: relative;
-    display: block; }
-  /*--BLOG CARDS--*/ }
+    display: block; } }
+
+@media screen and (max-width: 991px) {
+  .form-v6-content {
+    margin: 180px 20px;
+    flex-direction: column;
+    -o-flex-direction: column;
+    -ms-flex-direction: column;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column; }
+  .form-v6-content .form-left {
+    width: 100%; }
+  .form-v6-content .form-left img {
+    width: 100%;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 8px; }
+  .form-v6-content .form-detail {
+    padding: 30px 20px 30px 20px;
+    width: auto; }
+  .form-v6-content .form-detail .form-row input {
+    width: 96%; }
+  .form-v6-content .form-detail .register {
+    margin-bottom: 80px; } }
+
+@media screen and (max-width: 767px) {
+  .form-v6-content .form-detail .form-row input {
+    width: 94%; } }
 
 /*--------------CARROUSEL DE CARDS--------------*/
 a.color-pink {
@@ -107,58 +128,107 @@ a.color-pink {
   color: white;
   border-style: none; }
   a.color-pink:hover {
-    background: aqua;
+    background: #00bfff;
     border-style: none; }
 
 div.card {
-  box-shadow: 5px 5px 5px grey; }
+  box-shadow: 5px 5px 5px #b6b6b6; }
 
 .container {
-  max-width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1.5em; }
-  .container ul {
-    list-style: none;
-    padding: 0; }
-  .container .contact-wrapper > * {
-    padding: 1em; }
-  .container .contact-form {
-    background: white; }
-    .container .contact-form form {
-      display: grid;
-      grid-template-columns: 1fr 1fr; }
-      .container .contact-form form label {
-        display: block; }
-      .container .contact-form form p {
-        margin: 0;
-        padding: 1em; }
-      .container .contact-form form .block {
-        grid-column: 1 / 3; }
-      .container .contact-form form button {
-        background-color: aqua;
-        border: 0;
-        text-transform: uppercase;
-        padding: 1em;
-        cursor: pointer; }
-        .container .contact-form form button:hover {
-          background: rgba(251, 15, 125, 0.842);
-          color: white;
-          outline: 0; }
-      .container .contact-form form button, .container .contact-form form input, .container .contact-form form textarea {
-        width: 100%;
-        padding: .7em;
-        border: none;
-        background: none;
-        outline: 0;
-        color: black;
-        border-bottom: 4px solid rgba(251, 15, 125, 0.842); }
+  margin-bottom: 6%; }
 
-/* CONTACT INFO */
-.contact-info {
-  background: white; }
-  .contact-info h4, .contact-info ul, .contact-info p {
-    margin: 0 0 1rem 0; }
+.texto__contenedor center {
+  font-size: 18px; }
+
+.page-content {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -8%; }
+
+.form-v6-content {
+  background: white;
+  width: 968px;
+  border-radius: 8px;
+  margin: 180px 0;
+  color: white;
+  font-weight: 700;
+  position: relative;
+  display: flex; }
+  .form-v6-content.form-left {
+    margin-bottom: -6px; }
+    .form-v6-content.form-leftimg {
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px; }
+  .form-v6-content.form-detail {
+    padding: 30px 40px;
+    position: relative;
+    width: 100%; }
+    .form-v6-content.form-detail h2 {
+      color: #333;
+      font-size: 35px;
+      text-align: center;
+      position: relative;
+      padding: 6px 0 0;
+      margin-bottom: 47px; }
+  .form-v6-content.form-row {
+    width: 100%; }
+
+.form-v6-content .form-detail .form-row-last {
+  text-align: center; }
+
+.form-v6-content .form-detail .input-text {
+  margin-bottom: 35px; }
+
+.form-v6-content .form-detail input {
+  width: 92%;
+  padding: 0px 15px 10px 15px;
+  border: 2px solid transparent;
+  border-bottom: 2px solid white;
+  appearance: unset;
+  outline: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: #333; }
+
+.form-v6-content .form-detail .form-row input:focus {
+  border-bottom: 2px solid rgba(251, 15, 125, 0.842); }
+
+.form-v6-content .form-detail .register {
+  background: rgba(251, 15, 125, 0.842);
+  border-radius: 6px;
+  width: 160px;
+  box-shadow: 0px 3px 10px 0px #b6b6b6;
+  border: none;
+  margin: 11px 0 50px 0px;
+  cursor: pointer;
+  color: white;
+  font-weight: 700;
+  font-size: 18px; }
+
+.form-v6-content .form-detail .register:hover {
+  background: #00bfff; }
+
+.form-v6-content .form-detail .form-row-last input {
+  padding: 13px; }
+
+input::-webkit-input-placeholder {
+  color: #b6b6b6;
+  font-size: 16px; }
+
+input::-moz-placeholder {
+  color: #b6b6b6;
+  font-size: 16px; }
+
+input:-ms-input-placeholder {
+  color: #b6b6b6;
+  font-size: 16px; }
+
+input:-moz-placeholder {
+  color: #b6b6b6;
+  font-size: 16px; }
 
 /*----------GRID CATEGORIAS MÁS VENDIDAS---------*/
 .titulo__categorias {
@@ -166,6 +236,17 @@ div.card {
   text-align: center;
   margin-top: 3%;
   margin-bottom: 3%; }
+
+.grid {
+  background-color: white; }
+  .grid__contenedor {
+    display: grid;
+    width: 100%;
+    margin: auto; }
+  .grid__columna {
+    margin: 5px; }
+    .grid__columna img {
+      width: 100%; }
 
 .contenedor__img {
   display: flex; }
@@ -178,7 +259,7 @@ div.card {
       padding: 5px;
       margin: 5px; }
   .contenedor__img__columna {
-    background-color: rgba(0, 255, 255, 0.386);
+    background-color: #00abe4a8;
     padding: 15px; }
     .contenedor__img__columna img {
       width: 90%;
@@ -192,7 +273,7 @@ div.card {
   font-size: 25px;
   padding: 10px;
   margin: 1px;
-  background: rgba(0, 255, 255, 0.386);
+  background: #00abe4a8;
   position: relative;
   bottom: 90px; }
 
@@ -205,23 +286,6 @@ div.card {
   background: rgba(255, 0, 119, 0.337);
   position: relative;
   bottom: 90px; }
-
-/*-----------------GRID---------------*/
-.titulo-grid {
-  font-size: 70px;
-  color: black;
-  text-align: center; }
-
-.grid {
-  background-color: white; }
-  .grid__contenedor {
-    display: grid;
-    width: 100%;
-    margin: auto; }
-  .grid__columna {
-    margin: 5px; }
-    .grid__columna img {
-      width: 100%; }
 
 video {
   position: relative;

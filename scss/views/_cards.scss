@@ -12,6 +12,14 @@ a.color-pink{
 
 //MAP-GET
 div.card{
-    //box-shadow: 5px 5px 5px grey;
-    box-shadow: 5px 5px 5px map-get($sombras, 800);
+    box-shadow: 5px 5px 5px $color-gris;
+    //box-shadow: 5px 5px 5px map-get($sombras, 800);
+}
+
+.container{
+    margin-bottom: 6%;
+}
+
+.texto__contenedor center{
+    font-size: $tamano-terciario;
 }

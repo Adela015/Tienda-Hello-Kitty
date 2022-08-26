@@ -1,6 +1,6 @@
 
 //MAP
-$sombras: map-merge(
+/*$sombras: map-merge(
     (
     "100": #EEF1F4,
     "200": #DFE3E7,
@@ -14,18 +14,20 @@ $sombras: map-merge(
     ),
     $sombras
 );
-
+*/
 
 //Color Textos
 $color-rosa: rgba(251, 15, 125, 0.842);
 $color-rosa-transparente: rgba(255, 0, 119, 0.337);
-$color-aqua-transparente: rgba(0, 255, 255, 0.386);
-$color-aqua: aqua;
+$color-aqua-transparente: #00abe4a8;
+$color-aqua: #00bfff;
 $color-negro: black;
 $color-blanco: white;
+$color-gris:rgb(182, 182, 182);
 
 
 //Tamaño letras
 $tamano-principal: 30px;
 $tamano-secundario: $tamano-principal - 5px;
+$tamano-terciario: 18px;
 $width-principal: 100%;

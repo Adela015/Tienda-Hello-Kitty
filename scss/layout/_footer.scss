@@ -1,13 +1,7 @@
 /*----------------FOOTER-------------*/
 
-.footer__container{
-    background-color: aqua;
-    display: grid;
-    place-items: center;
-}
-
 //MIXIN
-@mixin footer($porcentaje, $alineado, $color) {
+/*@mixin footer($porcentaje, $alineado, $color) {
     color: $color;
     text-align: $alineado;
     font-size: 1.3rem;
@@ -23,4 +17,22 @@
 .footer__texto{
     @include footer(10%, center, #070707)
 }
+*/
+
+.contenedor__footer{
+    background: $color-aqua;
+    height: 150px;
+}
+
+.contenedor__footer--mensaje{
+    display: flex;
+    justify-content: center;
+    color: $color-blanco;
+    font-size: $tamano-terciario;
+    position: relative;
+    bottom: -75%;
+}
+
+
+
 

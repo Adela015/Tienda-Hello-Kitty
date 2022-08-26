@@ -7,6 +7,21 @@
     margin-bottom: 3%;
 }
 
+.grid{
+    background-color: $color-blanco;
+    &__contenedor{
+        display: grid;
+        width: 100%;
+        margin: auto;
+    }
+    &__columna{
+        margin: 5px;
+        img{
+            width: 100%;
+        }
+    }
+}
+
 .contenedor__img{
     display: flex;
     &__columna2{
